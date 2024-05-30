@@ -1,0 +1,10 @@
+[{"question_text": "What are dolphins?",
+  "alternatives": ["Amphibians", "Fish", "Mammals", "Birds"],
+  "correct_answer": 3},
+  {"question_text": "What is the capital of Cyprus?",
+  "alternatives": ["Nicosia", "Levkosia", "Paphos", "Polis", "Omodos"],
+  "correct_answer": 3},
+  {"question_text": "Whhat is sence of life?",
+  "alternatives": ["Blabla", "44"],
+  "correct_answer": 2}
+]
