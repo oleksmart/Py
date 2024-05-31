@@ -1,5 +1,5 @@
 def get_todos():
-    with open('files/todos.txt', 'r') as file:
+    with open('todos.txt', 'r') as file:
         todos_local = file.readlines()
     return todos_local
 
@@ -15,7 +15,7 @@ while True:
             
             todos.append(todo + '\n')
 
-            with open('files/todos.txt', 'w') as file:
+            with open('todos.txt', 'w') as file:
                  file.writelines(todos)         
 
     elif user_actions.startswith('show'):
@@ -35,7 +35,7 @@ while True:
             newItem = input("Enter new item: ")
             todos[indexArr] = newItem + "\n"
             print(todos)
-            with open('files/todos.txt', 'w') as file:
+            with open('todos.txt', 'w') as file:
                 file.writelines(todos)
         except ValueError:
             print("Your command is not allowed")
@@ -53,7 +53,7 @@ while True:
                 index = comp - 1
                 todo_to_remove = todos[index].strip('\n')
                 todos.pop(index)
-                with open('files/todos.txt', 'w') as file:
+                with open('todos.txt', 'w') as file:
                     file.writelines(todos) 
                 for index,item in enumerate(todos):
                     print(index + 1, item)

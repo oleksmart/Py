@@ -1,4 +1,6 @@
-def get_todos(filepath="files/todos.txt"):
+FILEPATH = "todos.txt"
+
+def get_todos(filepath=FILEPATH):
     """ Read text file description."""
 
     with open(filepath, 'r') as file:
@@ -7,7 +9,7 @@ def get_todos(filepath="files/todos.txt"):
 
 
 
-def write_todos(todos_arg, filepath="files/todos.txt"):
+def write_todos(todos_arg, filepath=FILEPATH):
      """Write todo items in the file."""
      
      with open(filepath, 'w') as file:
